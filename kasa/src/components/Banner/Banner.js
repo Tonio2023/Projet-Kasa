@@ -1,4 +1,5 @@
 import React from 'react'
+import './Banner.css';
 import K from '../../img/K.png'
 import logo from '../../img/logo.png'
 import s from '../../img/s.png'

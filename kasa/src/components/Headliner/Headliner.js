@@ -1,11 +1,12 @@
 import React from 'react'
+import './Headliner.css'
 
-const Headliner = () => {
+const Headliner = ({ image, title }) => {
   return (
-    <div>
-        <h1>heho!!!!</h1>
+    <div className='headCard'>
+      <img src={image} alt="Image d'illustration" />
+      {title && <p>{title}</p>}
     </div>
-  )
-}
-
+  );
+};
 export default Headliner

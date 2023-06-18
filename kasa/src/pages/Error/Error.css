@@ -1,0 +1,29 @@
+.errorContainer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.errorContainer h1 {
+    color: #FF6060;
+    font-size: 288px;
+    margin: 0;
+    margin-top: 100px;
+    margin-bottom: 139px;
+}
+.errorContainer p {
+    color: #FF6060;
+    font-size: 36px;
+    margin: 0;
+    margin-bottom: 139px;
+}
+.errorLink {
+    text-decoration: none;
+    margin: 0;
+    margin-bottom: 139px;
+    color: #FF6060;
+    font-size: 18px;
+}
+.errorContainer :link:hover {
+    text-decoration: underline;
+}

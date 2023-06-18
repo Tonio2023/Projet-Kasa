@@ -1,0 +1,38 @@
+.item {
+    
+}
+.item h2 {
+    background-color: #FF6060;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    padding-left: 15px;
+    height: 40px;
+    padding-top: 10px;
+    border-radius: 5px;
+    margin: 0;
+}
+.item img {
+    background-color: #FF6060;
+    width: 24px;
+    height: 14px;
+    position: relative;
+    top: -35px;
+    left: 96%;
+    cursor: pointer;
+    z-index: 1;
+    margin: 0;
+    margin-bottom: 0;
+    transition: transform 0.5s ease; /* Ajout de la transition */
+}
+.item img.expanded {
+    transform: rotate(180deg); /* Rotation de 180 degrés pour l'état "expanded" */
+  }
+.item p {
+    background-color: #f7f7f7;
+    margin-top: -20px;
+    border-radius: 5px;
+    color: #FF6060;font-size: 18px;
+    padding: 18px 22px 18px 22px;
+}

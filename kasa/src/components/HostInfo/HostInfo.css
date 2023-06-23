@@ -1,0 +1,64 @@
+.host {
+    display: flex;
+    justify-content: flex-end;
+}
+.host-name {
+    width: 80px;
+    color: #FF6060;
+    text-align: end;
+    margin-right: 15px;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+.host img {
+    border-radius: 50%;
+    height: 64px;
+    width: 64px;
+}
+.rating {
+    display: flex;
+    justify-content: flex-end;
+}
+.host-info .full {
+    color: #FF6060; /* Couleur des étoiles pleines */
+    font-size: 20px;
+    margin-right: 15px;
+}
+.host-info .grey {
+    color: #E3E3E3; /* Couleur des étoiles vides */
+    font-size: 20px;
+    margin-right: 15px;
+}
+/*Mobile version*/
+@media (max-width: 767px) {
+    .host-info {
+        display: flex;
+        justify-content: space-between;
+        flex-direction:row-reverse;
+        width: 100%;
+        margin-bottom: 12px;
+    }
+    .host-name p{
+        
+    }
+    .host-name {
+        font-size: 14px;
+        width: 50px;
+        margin: 0;
+        margin-right: 15px;
+        padding-top: 5px;
+    }
+    .host img {
+        border-radius: 50%;
+        height: 36px;
+        width: 36px;
+        margin-top: 5px;
+    }
+    .host-info .full {
+        font-size: 15px;
+        margin-right: 6px;
+    }
+    .host-info .grey {
+        font-size: 15px;
+        margin-right: 6px;
+    }
+}

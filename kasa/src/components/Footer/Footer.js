@@ -4,6 +4,7 @@ import Kfoot from '../../img/K-foot.png';
 import logofoot from '../../img/logo-foot.png';
 import sfoot from '../../img/s-foot.png';
 import afoot from '../../img/a-foot.png';
+import doorfoot from '../../img/white-door.png';
 
 
 
@@ -13,6 +14,7 @@ const Footer = () => {
         <div className='logoFooter'>
           <img src={Kfoot} alt="K-foot"/>
           <img src={logofoot} alt="logo-foot"/>
+          <img src={doorfoot} alt="logo-foot"/>
           <img src={sfoot} alt="s-foot"/>
           <img src={afoot} alt="a-foot"/>
         </div>

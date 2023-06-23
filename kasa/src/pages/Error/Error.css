@@ -27,3 +27,33 @@
 .errorContainer :link:hover {
     text-decoration: underline;
 }
+/*Mobile version*/
+@media (max-width: 767px) {
+    .errorContainer {
+
+    }
+    .errorContainer h1 {
+        font-size: 100px;
+        margin: 0;
+        margin-top: 140px;
+        margin-bottom: 10px;
+    }
+    .errorContainer p {
+        font-size: 16px;
+        font-weight: 500;
+        margin: 0;
+        text-align: center;
+        margin-left: 58px;
+        margin-right: 58px;
+        margin-bottom: 130px;
+    }
+    .errorLink {
+        font-weight: 500;
+        margin: 0;
+        font-size: 12px;
+        margin-bottom: 120px;
+    }
+    .errorContainer :link:hover {
+        text-decoration: underline;
+    }
+}

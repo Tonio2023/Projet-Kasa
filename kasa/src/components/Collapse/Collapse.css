@@ -3,3 +3,10 @@
     margin-left: 208px;
     margin-bottom: 30px;
 }
+/*Mobile version*/
+@media (max-width: 767px) { 
+    .collapse  {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}

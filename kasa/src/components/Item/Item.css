@@ -1,5 +1,8 @@
-.item {
-    
+.flexi {
+    display: flex;
+    background-color: #FF6060;
+    margin-bottom: 20px;
+    border-radius: 5px;
 }
 .item h2 {
     background-color: #FF6060;
@@ -12,19 +15,18 @@
     padding-top: 10px;
     border-radius: 5px;
     margin: 0;
+    width: 99%;
 }
 .item img {
     background-color: #FF6060;
     width: 24px;
     height: 14px;
-    position: relative;
-    top: -35px;
-    left: 96%;
     cursor: pointer;
-    z-index: 1;
     margin: 0;
+    margin-top: 19px;
     margin-bottom: 0;
-    transition: transform 0.5s ease; /* Ajout de la transition */
+    margin-right: 17px;
+    transition: transform 0.5s ease;
 }
 .item img.expanded {
     transform: rotate(180deg); /* Rotation de 180 degrés pour l'état "expanded" */
@@ -34,5 +36,33 @@
     margin-top: -20px;
     border-radius: 5px;
     color: #FF6060;font-size: 18px;
-    padding: 18px 22px 18px 22px;
+    padding: 18px 10px 18px 10px;
+}
+/*Mobile version*/
+@media (max-width: 767px) {
+    .flexi {
+        width: 100%;
+    }
+    .item {
+        width: 100%;
+    }
+    .item h2 {
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        padding-left: 15px;
+        height: 30px;
+    }
+    .item img {
+        width: 17px;
+        height: 9px;
+        margin: 11px 17px 0 0;
+        transition: transform 0.5s ease;
+    }
+    .item p {
+        margin-top: -20px;
+        font-size: 14px;
+        width: 94%;
+    }
 }

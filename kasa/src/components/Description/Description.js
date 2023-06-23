@@ -1,26 +1,18 @@
-import React from 'react'
-import './Description.css'
+import React from 'react';
+import './Description.css';
 
-const Description = () => {
+const Description = ({ title, location, tags }) => {
   return (
-    <div className='description'> 
-        <div className='titleAndTags'>
-            <h2>Appartement 10 ème</h2>
-            <p>ile de France</p>
-        
-            <div className='tags'>
-                <p></p>
-                <p></p>
-            </div>
-        </div>
-        <div className='hostAndRates'>
-            <div>
-                <p>thomas</p>
-                <img></img>
-            </div>
-        </div>    
+    <div className="description">
+      <h2 className="title">{title}</h2>
+      <p className="location">{location}</p>
+      <div className="tags">
+        {tags.map((tag, index) => (
+          <p key={index}>{tag}</p>
+        ))}
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Description
+export default Description;

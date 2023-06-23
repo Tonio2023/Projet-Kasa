@@ -9,16 +9,17 @@ import Banner from './components/Banner/Banner';
 import Footer from './components/Footer/Footer';
 
 function App() { //page principale du site
+
   return (
     <div className="App">
-      <Banner />
-      <Routes>
+      <Banner className="banner"/>
+      <Routes className="routes">
         <Route path="/" element={<Home/>} />
         <Route path="/About" element={<About/>} />
         <Route path="/Logement/:id" element={<Logement/>} />
         <Route path="*" element={<Error/>} />
       </Routes>
-      <Footer />
+      <Footer className="appFooter"/>
     </div>
   );
 }

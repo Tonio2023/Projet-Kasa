@@ -6,7 +6,6 @@ const Section = () => {
   return (
     <div className='container'>
         <Cards />
-        
     </div>
   )
 }

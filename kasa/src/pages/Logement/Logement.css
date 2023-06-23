@@ -1,3 +1,50 @@
 .logement {
     margin: 50px 100px 50px 100px;
 }
+.itemLoge {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+.logement .item {
+    width: 100%;
+}
+.logement .item img {
+    left: 93%;
+}
+.item ul {
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    margin-top: -20px;
+    border-radius: 5px;
+    height: auto;
+    background-color: #F7F7F7;
+}
+.item li {
+    list-style: none;
+    color: #FF6060;
+    font-size: 17px;
+    margin-bottom: 3px;
+}
+/*Mobile version*/
+@media (max-width: 767px) {
+    .logement {
+        margin: 27px 20px 15px 20px;
+    }
+    .itemLoge {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    .item ul {
+        width: 94%;
+    }
+    .item li {
+        font-size: 14px;
+    }
+    
+}

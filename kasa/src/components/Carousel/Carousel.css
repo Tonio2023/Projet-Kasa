@@ -1,6 +1,5 @@
 .carousel {
     width: 100%;
-    background-color: blue;
     height: 415px;
     border-radius: 25px;
     margin-bottom: 30px;
@@ -34,4 +33,31 @@
     top: 85%;
     left: 50%;
     font-size: 18px;
+}
+/*Mobile version*/
+@media (max-width: 767px) {
+    .carousel {
+        margin-bottom: 15px;
+        height: 255px;
+        
+    }
+    .next,
+    .previous {
+    position: absolute;
+    top: 44%;
+    transform: translate(-50%);
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: white;
+    }
+    .previous {
+        left: 15px;
+    }
+    .next {
+        right: -15px;
+    }
+    .counter {
+        font-size: 12px;
+    }
 }

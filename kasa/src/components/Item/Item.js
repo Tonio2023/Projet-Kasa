@@ -11,14 +11,28 @@ const Item = ({ title, content }) => {
 
   return (
     <div className='item'>
-      <h2>{title}</h2>
-      <img
-        src={ChevronSmall}
-        alt='Chevron'
-        className={`chevron ${isExpanded ? 'expanded' : ''}`}
-        onClick={handleChevronClick}
-      />
-      {isExpanded && <p>{content}</p>}
+      <div className='flexi'>
+        <h2>{title}</h2>
+        <img
+          src={ChevronSmall}
+          alt='Chevron'
+          className={`chevron ${isExpanded ? 'expanded' : ''}`}
+          onClick={handleChevronClick}
+        />
+      </div>  
+      {isExpanded && (
+        <>
+          {Array.isArray(content) ? (
+            <ul className="item-content">
+              {content.map((equipment, index) => (
+                <li key={index}>{equipment}</li>
+              ))}
+            </ul>
+          ) : (
+            <p className="item-content">{content}</p>
+          )}
+        </>
+      )}
     </div>
   );
 };

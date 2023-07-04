@@ -1,0 +1,12 @@
+/*Mobile version*/
+@media (min-width: 768px) {.about {
+    height: 1200px;
+}
+}
+/*Mobile version*/
+@media (max-width: 767px) {
+    #aboutHeadliner {
+        height: 255px;
+        background-color: aqua;
+    }
+}

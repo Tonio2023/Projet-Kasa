@@ -2,8 +2,11 @@ import React from 'react';
 import './HostInfo.css';
 
 const HostInfo = ({ host, rating }) => {
+  // Fonction pour générer les étoiles en fonction de la notation
   const renderStars = (rating) => {
+    // Calculer le nombre d'étoiles remplies
     const filledStars = Math.round(rating);
+    // Calculer le nombre d'étoiles vides
     const emptyStars = 5 - filledStars;
 
     const stars = [];

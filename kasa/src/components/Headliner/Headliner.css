@@ -38,12 +38,20 @@
 }
 /*mobile version*/
 @media (max-width: 767px) {
-    .headCard {
+    .about .headCard {
+        margin: 30px 20px 30px 20px;
+        border-radius: 25px;
+        overflow: hidden;
+        height: 260px;
+        position: relative;
+    }
+    .home .headCard {
         margin: 30px 20px 30px 20px;
         border-radius: 25px;
         overflow: hidden;
         height: 111px;
         position: relative;
+        
     }
     
     .headCard img {

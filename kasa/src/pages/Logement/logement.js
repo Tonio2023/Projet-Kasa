@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, Navigate } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';    // useParams (pour obtenir les paramètres de l'URL) et Navigate (pour naviguer vers d'autres pages).
 import './Logement.css';
 import Carousel from '../../components/Carousel/Carousel';
 import Description from '../../components/Description/Description';
@@ -7,20 +7,20 @@ import HostInfo from '../../components/HostInfo/HostInfo';
 import Item from '../../components/Item/Item';
 
 const Logement = () => {
-  const { id } = useParams();
-  const [logementData, setLogementData] = useState(null);
+  const { id } = useParams(); //  useParams pour obtenir les paramètres de l'URL. Il extrait l'ID du logement de ces paramètres.
+  const [logementData, setLogementData] = useState(null);  // useState pour gérer l'état du logement (logementData) et l'état de non-disponibilité (notFound). Ils sont initialement définis sur null et false respectivement.
   const [notFound, setNotFound] = useState(false);
 
-  useEffect(() => {
+  useEffect(() => { // Récupération des données du logement
     const fetchLogementData = async () => {
       try {
         const response = await fetch('/logements.json');
         const data = await response.json();
-        // Retrieve specific logement data based on ID or other criteria
+        //  récupération des données du logement basée sur l'id (recherche dans le tableau de données)
         const logement = data.find((item) => item.id === id);
 
         if (logement) {
-          setLogementData(logement);
+          setLogementData(logement); // Si le logement est trouvé, les données du logement sont définies dans l'état logementData
         } else {
           setNotFound(true); // Définit l'état notFound à true si le logement n'est pas trouvé
         }

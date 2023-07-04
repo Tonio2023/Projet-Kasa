@@ -7,7 +7,7 @@ import Homeimg from "../../img/Home-img.jpg"
 export default function Home() {
     //pour réaliser le retour à la ligne sur la version mobile dans le composant Headliner 
   const addLineBreak = (text) => {
-    return text.replace(",", ",\n");
+    return text.replace(",", ",\n"); //fonction addLineBreak est appelée pour modifier le contenu du paragraphe et ajouter des retours à la ligne après les virgules.
   };
 
   const paragraphContent = "Chez vous, partout et ailleurs";
@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <div className="home">
-      <Headliner image={Homeimg} title={modifiedParagraphContent} />
+      <Headliner className='homeHeadCard' image={Homeimg} title={modifiedParagraphContent} />
       <Section />
     </div>
   );

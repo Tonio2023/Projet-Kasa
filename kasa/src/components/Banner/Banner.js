@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink, useLocation } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom' //composant NavLink de react-router-dom pour créer des liens de navigation. Le hook useLocation est utilisé pour obtenir l'emplacement actuel.
 import './Banner.css';
 import K from '../../img/K.png'
 import logo from '../../img/logo.png'
@@ -20,10 +20,10 @@ const Banner = () => {
             <img src={a} alt='a du logo de kasa'></img>
         </div>
         <nav>
-          <NavLink exact to='/' activeClassName='active'>
+          <NavLink to='/' >
             Accueil
           </NavLink>
-          <NavLink to='/about' activeClassName='active'>
+          <NavLink to='/about' >
             A propos
           </NavLink>
         </nav>
